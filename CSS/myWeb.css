@@ -1,0 +1,332 @@
+/*animate navbar, wallpaper,scrollspy and content management*/
+body {
+  position: relative;
+}
+nav {
+	position: fixed;
+}
+.nav li a:focus, .nav li a:hover{
+	background-color: initial;
+}
+#banner{
+	background: url("../Images/img.jpg");
+	width: 100%;
+	height: 200vh;
+	margin-top: 0px;
+	position: fixed;
+}
+
+#banner a {
+	color:white;
+	text-decoration: none;
+}
+#banner blockquote{
+	display: table-cell;
+	height: 100vh;
+	vertical-align: middle;
+	width: 10%;
+	margin: 0 auto;
+}
+#banner h3 {
+	font-family: 'playfair';
+	text-align: center;
+	font-weight: 300;
+	letter-spacing: 1px;
+	font-size: 27px;
+	line-height: 33px;
+	color: rgba(255,255,255,0.8);
+}
+#banner h3 small {
+	color: rgba(255,255,255,0.8);
+}
+#banner a button{
+	border-radius: 15px;
+	letter-spacing: 2px;
+	font-weight: 400;
+	display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+#banner a button .text-btn {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	letter-spacing: 2px;
+}
+#content {
+	margin-left:0px;
+	position: relative;
+	width: 100%;
+	top:700px;
+	overflow: hidden;
+	background: #eee;
+}
+#textPart {
+	padding-left: 35px;
+	padding-right: 15px;
+}
+@media (min-width: 768px) {
+	.navbar-right {
+		margin-right: 15px;
+	}
+}
+.navbar-default {
+	background: #303745;
+	border-bottom: 0;
+}
+.navbar-brand {
+	text-indent: -9999px;
+	margin-top: 13px;
+	background: url("../Images/img1.png") no-repeat;
+	height: 32px;
+	width: 87px;
+}
+.navbar-default .navbar-brand {
+	font-weight: 600px;
+	background: url("../Images/img1-sm.png") no-repeat;
+	height: 23px;
+	width: 62px;
+}
+.navbar-default .navbar-nav>li>a {
+	font-family: Montserrat;
+	font-size: 11px;
+	font-weight: 600px;
+	text-transform: uppercase;
+}
+.navbar-transparent {
+	background-color: transparent;
+}
+.navbar-transparent .navbar-brand {
+	color: rgba(255,255,255,0.8);
+	font-weight: 600px;
+}
+
+.navbar-transparent .navbar-nav>li>a {
+	font-family: 'Montserra';
+	margin-top: 10px;
+	color: rgba(255,255,255,0.8);
+	font-size: 14px;
+	font-weight: 600px;
+	text-transform: uppercase;
+}
+.navbar-transparent:hover .navbar-nav>li>a:hover {
+		background-color: inherit;
+		color: #FEC503;
+}
+.navbar-default .navbar-nav>.active > a, .navbar-default .navbar-nav>.active > a:hover {
+	color: #FFF;
+	background: #6A6C78;
+}
+.navbar-default .navbar-nav>li>a {
+	color: #FFF;
+}
+.navbar-default:hover .navbar-nav>li>a:hover {
+	color: #FEC503;
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #FEC503;
+    background-color: transparent;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #ffffff;
+    background-color: #868484;
+}
+/* horizontal line */
+hr.style18 { 
+  height: 30px; 
+  border-style: solid; 
+  border-color: #8c8b8b; 
+  border-width: 1px 0 0 0; 
+  border-radius: 20px; 
+} 
+hr.style18:before { 
+  display: block; 
+  content: ""; 
+  height: 30px; 
+  margin-top: -31px; 
+  border-style: solid; 
+  border-color: #8c8b8b; 
+  border-width: 0 0 1px 0; 
+  border-radius: 20px; 
+}
+/* text transform in about */
+#about h1, #about h2 {
+	color: #323643;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	letter-spacing: 2px;
+	margin: 0 5px 0 -10px;
+}
+#about p {
+	letter-spacing: 1.5px;
+	margin-right: 5px;
+	color: #303745;
+	font-family: Georgia,serif;
+	line-height: 1.7;
+	font-size: 15px;
+	text-align: justify;
+}
+/* Gallery styles*/
+#about {
+	padding-top: 60px;
+}
+#about .thumbnail {
+	overflow: hidden;
+	height:90%;
+	width:100%;
+}
+#about .thumbnails {
+	margin: 0 auto;
+}
+#about .thumbnails a {
+	float:left;
+	margin-right: 6px;
+	margin-bottom: 12px;
+}
+#about .thumbnails img {
+	transition: all .2s ease-in-out;
+}
+#about .thumbnails:hover img {
+	opacity: .6;
+	transform: scale(.92);
+}
+#about .thumbnails img:hover {
+	opacity: 1;
+	transform: rotate(2deg);
+	box-shadow: 0 0 7px rgba(0,0,0,0.5)
+}
+
+#about .text-btn {
+	font-family: 'Montserrat';
+	letter-spacing: 2px;
+}
+/* Thumbnail and zoom effect */
+#portfolio h1, #portfolio h3, #portfolio h5,#portfolio h5 small{
+	color: #323643;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 2px;
+}
+#portfolio h3{
+	margin: 0;
+	padding: 20px 0 0;
+}
+#portfolio h4 {
+	margin-top:2px;
+}
+#portfolio h1{
+	font-family:'Montserrat', sans-serif;
+	font-weight: 600;
+}
+#portfolio .caption {
+	background: #e6e1e1;
+	margin-top:0 0 25px;
+}
+#portfolio {
+	padding-top: 40px;
+}
+#portfolio .thumbnail {
+	width: 100%;
+	overflow: hidden;
+	height: 200px;
+}
+#portfolio img {
+	-webkit-transition: all 0.75s ease;
+}
+#portfolio img:hover {
+	transform: scale(1.15);
+}
+#portfolio .image { 
+   position: relative; 
+   width: 80%; /* for IE 6 */
+}
+.videos iframe {
+	width:100%;
+	height:28rem;
+	
+}
+/* Blurred image */
+#portfolio .textWithBlurredBg img {
+	width: 100%;
+	height: 100%;
+}
+#portfolio .textWithBlurredBg:hover img{
+	filter: blur(0.65px) brightness(100%);
+}
+#portfolio .textWithBlurredBg {
+	margin:0 auto 25px;
+}
+#portfolio .textWithBlurredBg a {
+	text-decoration: none;
+}
+#portfolio {
+	position: relative;
+}
+/* icons */
+#contact h1 {
+	color: rgba(255,255,255,0.8);
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 2px;
+	font-weight: 600;
+}
+#contact h3,h2, h2 small {
+	font-family: 'playfair';
+	letter-spacing: 1px;
+	text-align: center;
+	color:rgba(255,255,255,0.8);
+}
+#contact {
+	background: #303745;
+	padding: 60px 0 0 0;
+	width: : 100%;
+	height: 100vh;
+}
+
+#contact ul {
+	padding: 90px 0 0 30px;
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	left:48.6%;
+}
+#contact ul li {
+	list-style: none;
+	float: left;
+	margin: 10px;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	background: #303745;
+	border-radius: 50%;
+	font-size: 25px;
+	position: relative;
+	transition: .5s ease-in-out;
+	color: #FFF;
+	z-index: 1;
+	display:block;
+
+}
+#contact ul li a {
+	text-decoration: none;
+	color: rgba(255,255,255,0.8);
+}
+#contact ul li:before {
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left:0;
+	background: #FEC503;
+	border-radius: 50%;
+	transform: scale(0);
+	transition: .3s ease-in-out;
+	z-index: -1;
+}
+#contact ul li:hover:before {
+	transform: scale(1);
+}
+#contact ul li:hover {
+	color: #fff;
+}
